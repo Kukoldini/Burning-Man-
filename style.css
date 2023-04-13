@@ -43,7 +43,7 @@ footer {
 }
 .header {
 	padding-top: 57px;
-	background: url(../BurningMan/images/header-bg.jpg) no-repeat center top / cover;
+	background: url(images/header.jpg) no-repeat center top / cover;
 	height: 900px;
 }
 .phone-block {
