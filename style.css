@@ -210,6 +210,9 @@ h3 {
 	}
 }
 @media screen and (max-width: 460px) {
+	.header {
+		height: 100vh;
+	}
 	.container {
 		margin: 0 auto;
 	}
@@ -231,16 +234,19 @@ h3 {
 		flex-direction: column;
 	}
 	.desc-left, .desc-right {
-		width: 90%;
+		width: 100%;
 	}
 	.gallery {
-		flex-direction: column;
 		align-items: center;
+		flex-wrap: wrap;
 	}
 	.img {
-		width: 80%;
+		width: 48%;
 		height: auto;
 		margin-top: 20px;
+	}
+	.threed-img {
+		width: 100%;
 	}
 	footer {
 		width: 100%;
