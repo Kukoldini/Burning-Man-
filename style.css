@@ -38,7 +38,7 @@ footer {
 	margin-right: 40px;
 }
 .container {
-	width: 1170px;
+	width: 90%;
 	margin: 0 auto;
 }
 .header {
@@ -67,6 +67,18 @@ footer {
 	display: flex;
 	align-items: center;
 }
+.burger-menu-button {
+	position: absolute;
+	right: -60px;
+	height: 50px;
+	width: 50px;
+	background-color: #000;
+	border-radius: 50px;
+}
+.burger-menu-button hr {
+	margin-top: 11px;
+	width: 70%;
+}
 .logo {
 	margin-right: 69px;
 }
@@ -75,7 +87,6 @@ footer {
 	margin-left: 56px;
 	padding-top: 216px;
 	color: #fff;
-	width: 1170px;
 	margin: 0 auto;
 }
 .offer p {
@@ -112,34 +123,137 @@ footer {
 	margin-bottom: 50px;
 }
 .desc-left, .desc-right {
-	width: 564px;
+	width: 47%;
 }
 h3 {
 	font-size: 25px;
 }
 .gallery {
-	width: 100%;
    	display: flex;
    	justify-content: space-between;
 }
 .img {
-    transition: 0.3s; /* Время эффекта */
+	height: 340px;
+    transition: 0.3s;
 }
 .img:hover {
-	transform: scale(1.2); /* Увеличиваем масштаб */
+	transform: scale(1.2); 
 }
-.asddsa {
-   	width: 100%;
-   	display: flex;
-   	justify-content: space-between;
-}
+
+
 .footer-text {
 	display: flex;
 	justify-content: start;
 	font-family: 'Open-sans';
 	font-size: 14px;
 }
-.footer-text p {
-	padding-right: 50px;
+
+.show {
+	transition: 0.3s; 
+	left: 0;
+}
+.hide {
+	transition: 0.2s;
+	left: -100%;
+}
+@media screen and (max-width: 1240px) {
+	.img {
+		height: 300px;
+	}
 }
 
+@media screen and (max-width: 1024px) {
+	.img {
+		height: 240px;
+	}
+}
+
+@media screen and (max-width: 880px) {
+	.img {
+		height: 200px;
+	}
+	.offer h1 {
+		font-size: 80px;
+	}
+}
+@media screen and (max-width: 740px) {
+	.img {
+		height: 170px;
+	}
+	.offer h1 {
+		font-size: 60px;
+	}
+	.menu li {
+		margin-right: 17px;
+	}
+}
+@media screen and (max-width: 640px) {
+	.img {
+		height: 140px;
+	}
+	.phone-block {
+		display: none;
+	}
+}
+@media screen and (max-width: 520px) {
+	header {
+		height: 100vh;
+	}
+	.offer p {
+		font-size: 20px;
+	}
+	.offer h1 {
+		font-size: 40px;
+	}
+	.img {
+		height: 120px;
+	}
+}
+@media screen and (max-width: 460px) {
+	.container {
+		margin: 0 auto;
+	}
+	.nav {
+		margin: 0;
+		position: fixed;
+		width: 100%;
+		left: -100%;
+		flex-direction: column;
+		align-items: start;
+	}
+	.menu {
+		flex-direction: column;
+	}
+	.menu li {
+		margin-top: 20px;
+	}
+	.description {
+		flex-direction: column;
+	}
+	.desc-left, .desc-right {
+		width: 90%;
+	}
+	.gallery {
+		flex-direction: column;
+		align-items: center;
+	}
+	.img {
+		width: 80%;
+		height: auto;
+		margin-top: 20px;
+	}
+	footer {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 340px) {
+	.desc-logo {
+		font-size: 30px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	.desc-right {
+		margin-top: 50px;
+	}
+}
