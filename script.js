@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 var menu = document.querySelector('.nav');
 var button = document.querySelector('.burger-menu-button');
 
@@ -11,7 +11,7 @@ button.addEventListener('click', function() {
 		menu.classList.add('hide');
 	}
 })
-=======
+
 var menu = document.querySelector('.nav');
 var button = document.querySelector('.burger-menu-button');
 
@@ -24,5 +24,3 @@ button.addEventListener('click', function() {
 		menu.classList.add('hide');
 	}
 })
-console.log("asd");
->>>>>>> b189cd0 (Adaptive design added)
